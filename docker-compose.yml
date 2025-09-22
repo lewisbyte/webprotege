@@ -11,7 +11,7 @@ services:
 
   webprotege:
     container_name: webprotege
-    image: protegeproject/webprotege
+    image: lingyidx/webprotege-zh
     depends_on:
       - wpmongo
     restart: unless-stopped
@@ -20,5 +20,5 @@ services:
     volumes: 
     - ./.protegedata/protege:/srv/webprotege
     ports:
-      - 5000:8080
+      - 8080:8080
 
